@@ -126,8 +126,8 @@ type Article = {
 	accounts: string[];
 	status: "open" | "close";
 	details?: {
-		readonly createAt: string;
-		readonly updateAt: string;
+		readonly createAt: Date;
+		readonly updateAt: Date;
 	};
 };
 
@@ -137,8 +137,8 @@ const article1: Article = {
 	accounts: ["Max", "Anton", "Nikita"],
 	status: "open",
 	details: {
-		createAt: "2021-01-01",
-		updateAt: "2021-05-01",
+		createAt: new Date("2021-01-01"),
+		updateAt: new Date("2021-05-01"),
 	},
 };
 
